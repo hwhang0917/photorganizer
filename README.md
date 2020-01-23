@@ -9,3 +9,14 @@ This is a image organizing web based application. This is a group project for th
 - Heesang Mark Whang
 - Subin Kim
 - Akhigbe Unuigbe
+
+#### Tasks
+
+* [x] SPMP
+* [ ] Wireframe
+* [ ] Front-end
+* [ ] DB Model
+* [ ] Back-end
+* [ ] Integration
+* [ ] Testing
+* [ ] Deployment
