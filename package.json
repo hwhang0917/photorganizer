@@ -1,0 +1,23 @@
+{
+  "name": "photorganizer",
+  "version": "1.0.0",
+  "description": "This is an image organizing web based application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwhang0917/photorganizer.git"
+  },
+  "author": {"name": "Heesang Mark Whang", "email": "heesang.m.whang@biola.edu"},
+  "contributors": [
+    {"name": "Subin Kim"},
+    {"name": "Akhigbe Unuigbe"}
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwhang0917/photorganizer/issues"
+  },
+  "homepage": "https://github.com/hwhang0917/photorganizer#readme"
+}
