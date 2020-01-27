@@ -2,11 +2,17 @@
 
 #### Guide
 
-Use NPM to start the project
+1. Install Dependencies
 
-```shell
-npm install
-```
+   ```shell
+   npm install
+   ```
+
+2. Start project
+
+   ```shell
+   npm start
+   ```
 
 #### Description
 
