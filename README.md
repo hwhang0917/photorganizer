@@ -26,11 +26,11 @@ This is an image organizing web based application. This is a group project for t
 
 #### Reference Links
 
-[Figma Wireframe](https://www.figma.com/file/QkBPxaX2kneznzkUjByjNu/Photorganizer?node-id=0%3A1)
-[Node JS](https://nodejs.org/en/)
-[ESLint](https://eslint.org/)
-[Electron JS](https://www.electronjs.org/)
-[Google Firebase](https://firebase.google.com/)
+- [Figma Wireframe](https://www.figma.com/file/QkBPxaX2kneznzkUjByjNu/Photorganizer?node-id=0%3A1)
+- [Node JS](https://nodejs.org/en/)
+- [ESLint](https://eslint.org/)
+- [Electron JS](https://www.electronjs.org/)
+- [Google Firebase](https://firebase.google.com/)
 
 #### Tasks
 
