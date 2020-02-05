@@ -10,14 +10,24 @@
     "type": "git",
     "url": "git+https://github.com/hwhang0917/photorganizer.git"
   },
-  "author": {"name": "Heesang Mark Whang", "email": "heesang.m.whang@biola.edu"},
+  "author": {
+    "name": "Heesang Mark Whang",
+    "email": "heesang.m.whang@biola.edu"
+  },
   "contributors": [
-    {"name": "Subin Kim"},
-    {"name": "Akhigbe Unuigbe"}
+    {
+      "name": "Subin Kim"
+    },
+    {
+      "name": "Akhigbe Unuigbe"
+    }
   ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hwhang0917/photorganizer/issues"
   },
-  "homepage": "https://github.com/hwhang0917/photorganizer#readme"
+  "homepage": "https://github.com/hwhang0917/photorganizer#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
 }
