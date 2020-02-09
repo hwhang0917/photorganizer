@@ -37,7 +37,7 @@ This is an image organizing web based application. This is a group project for t
 
 - [x] [SPMP](https://docs.google.com/document/d/1efZlZqXOyssNrvKTeD-z5PMA7D-dw2AZRmiQvfEBhv8/edit?usp=sharing)
 - [x] [SRS](https://docs.google.com/document/d/11epIAPKunG_suhRi7M4IBe1h7vPPXuk_Qj3y8QR6Vw4/edit?usp=sharing)
-- [ ] [SDD](https://docs.google.com/document/d/1ACKGWFZgQT5GJlm6Oa4l6Cc52V0TqhxrQ5hAnHAdXaU/edit?usp=sharing)
+- [x] [SDD](https://docs.google.com/document/d/1ACKGWFZgQT5GJlm6Oa4l6Cc52V0TqhxrQ5hAnHAdXaU/edit?usp=sharing)
 - [ ] Wireframe
 - [ ] Documentation
 - [ ] Front-end
