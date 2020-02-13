@@ -29,7 +29,8 @@ This is an image organizing web based application. This is a group project for t
 - [Figma Wireframe](https://www.figma.com/file/QkBPxaX2kneznzkUjByjNu/Photorganizer?node-id=0%3A1)
 - [Node JS](https://nodejs.org/en/)
 - [Express JS](https://expressjs.com/)
-- [ESLint](https://eslint.org/)
+- [Babel](https://babeljs.io/)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Electron JS](https://www.electronjs.org/)
 - [Google Firebase](https://firebase.google.com/)
 
