@@ -34,6 +34,11 @@ This is an image organizing web based application. This is a group project for t
 - [Electron JS](https://www.electronjs.org/)
 - [Google Firebase](https://firebase.google.com/)
 
+#### Middlewares
+
+- [Morgan](https://www.npmjs.com/package/morgan)
+- [Helmet](https://www.npmjs.com/package/helmet)
+
 #### Tasks
 
 - [x] [SPMP](https://docs.google.com/document/d/1efZlZqXOyssNrvKTeD-z5PMA7D-dw2AZRmiQvfEBhv8/edit?usp=sharing)
