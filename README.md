@@ -33,6 +33,7 @@ This is an image organizing web based application. This is a group project for t
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Electron JS](https://www.electronjs.org/)
 - [Google Firebase](https://firebase.google.com/)
+- [Git Cheatsheet](https://rogerdudler.github.io/git-guide/index.html)
 
 #### Middlewares
 
