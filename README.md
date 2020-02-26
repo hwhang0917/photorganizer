@@ -1,5 +1,11 @@
 # Photorganizer
 
+- Quick Note
+  - Use the following command to clone git repository to your local computer
+  ```shell
+  git clone https://github.com/hwhang0917/photorganizer.git
+  ```
+
 ## Project Members
 
 - Heesang Mark Whang
