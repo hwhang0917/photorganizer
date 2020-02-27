@@ -123,5 +123,17 @@ Most of the NPM/YARN packages have their own documentations. You can view their 
 #### Sprint #1 Tasks
 
 - [ ] Project Setting (Dev Ops)
-- [ ] Routing
+  - [ ] SCSS / Babel Build flow
+- [x] Routing
+- [x] Server
 - [ ] Page Rendering using Pug and SCSS
+  - [x] Pug
+  - [ ] SCSS
+- [ ] Pages
+  - [ ] Landing Page (Home)
+  - [ ] Login
+  - [ ] Reset Password
+  - [ ] Join
+  - [ ] Dashboard
+  - [ ] Image Detail
+  - [ ] Settings
