@@ -5,6 +5,7 @@
   ```shell
   git clone https://github.com/hwhang0917/photorganizer.git
   ```
+  - [Install Yarn](https://yarnpkg.com/getting-started/install)
 
 ## Project Members
 
@@ -15,6 +16,10 @@
 ## Project Description
 
 This is an image organizing web based application. This is a group project for the course Software Engineering (CSCI450) instructed by professor Grace Lew.
+
+- #### General Guide
+
+  We will use [Yarn Package Manager](https://yarnpkg.com/) for all dependency management.
 
 - #### Backend Side Guide
 
@@ -35,12 +40,6 @@ This process will start a development server in localhost
 1. Install Dependencies
 
    ```shell
-   npm install
-   ```
-
-   or
-
-   ```shell
    yarn install
    ```
 
@@ -49,24 +48,12 @@ This process will start a development server in localhost
    This process will watch client side assets (JS, SCSS, PUG, etc)
 
    ```shell
-   npm run dev:assets
-   ```
-
-   or
-
-   ```shell
    yarn run dev:assets
    ```
 
 3. Run Develop Server
 
    This process will watch server side code (express server, etc)
-
-   ```shell
-   npm run dev:server
-   ```
-
-   or
 
    ```shell
    yarn run dev:server
@@ -79,22 +66,10 @@ This process will build deployable code to common JavaScript using Gulp
 1. Install Dependencies
 
    ```shell
-   npm install
-   ```
-
-   or
-
-   ```shell
    yarn install
    ```
 
 2. Build project
-
-   ```shell
-   npm run build
-   ```
-
-   or
 
    ```shell
    yarn run build
@@ -107,6 +82,7 @@ The following are useful links and dependency documentations.
 ##### Used Tool Links
 
 - [Node JS](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
 - [Figma Wireframing Tool](https://www.figma.com/)
 
 ##### Dependency Suggestion

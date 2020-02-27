@@ -1,26 +1,27 @@
-// General
+// Global
 const HOME = "/";
-const SETTINGS = "/settings";
-
-// User
 const JOIN = "/join";
 const LOGIN = "/login";
 const RESET_PASSWORD = "/reset-password";
+const SETTINGS = "/settings";
 
-// Dashboard
-const DASHBOARD = "/dashboard/:id";
-const IMAGE_DETAIL = "/images/:id";
+// Dashboardz
+const DASHBOARD = "/dashboard";
+const DASHBOARD_HOME = "/:id";
+const IMAGE_DETAIL = "/:id/image/:id";
 
 const routes = {
   home: HOME,
   join: JOIN,
   login: LOGIN,
   resetPassword: RESET_PASSWORD,
-  dashboard: id => {
+  settings: SETTINGS,
+  dashboard: DASHBOARD,
+  dashboardHome: id => {
     if (id) {
       return `/dashboard/${id}`;
     } else {
-      return DASHBOARD;
+      return DASHBOARD_HOME;
     }
   },
   imageDetail: id => {
