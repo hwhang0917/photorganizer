@@ -1,5 +1,5 @@
 export const getHome = (req, res) => {
-  res.render("home");
+  res.render("home", { pageTitle: "Home" });
 };
 
 export const getJoin = (req, res) => {
@@ -11,7 +11,7 @@ export const getLogin = (req, res) => {
 };
 
 export const getResetPassword = (req, res) => {
-  res.render("resetPassword", { pateTitle: "Reset Password" });
+  res.render("resetPassword", { pageTitle: "Reset Password" });
 };
 
 export const getSettings = (req, res) => {

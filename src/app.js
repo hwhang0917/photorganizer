@@ -5,6 +5,7 @@ import { join } from "path";
 import routes from "./routes";
 import globalRouter from "./router/globalRouter";
 import dashboardRouter from "./router/dashboardRouter";
+import { localsMiddleware } from "./middleware";
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.set("views", join(__dirname, "views"));
 // Middlewares
 app.use(helmet());
 app.use(logger("dev"));
+app.use(localsMiddleware);
 
 // Use Static directory
 app.use("/static", express.static("static"));
