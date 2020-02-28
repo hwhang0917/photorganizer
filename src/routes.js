@@ -7,6 +7,7 @@ const SETTINGS = "/settings";
 
 // Dashboardz
 const DASHBOARD = "/dashboard";
+const DASHBOARD_FILTER = "/filter";
 const DASHBOARD_HOME = "/:id";
 const IMAGE_DETAIL = "/:id/image/:id";
 
@@ -17,6 +18,7 @@ const routes = {
   resetPassword: RESET_PASSWORD,
   settings: SETTINGS,
   dashboard: DASHBOARD,
+  dashboardFilter: DASHBOARD_FILTER,
   dashboardHome: id => {
     if (id) {
       return `/dashboard/${id}`;
