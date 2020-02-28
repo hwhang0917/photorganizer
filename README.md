@@ -112,7 +112,7 @@ Most of the NPM/YARN packages have their own documentations. You can view their 
 - [x] [Scrum Back Log](https://docs.google.com/spreadsheets/d/1froPASSCHChP8bctYNTxjJfjIjAtwvmkpMPh1d5ASao/edit?usp=sharing)
 - [x] [Wireframe](https://www.figma.com/file/QkBPxaX2kneznzkUjByjNu/Photorganizer?node-id=0%3A1)
 - [x] [Scrum Product Backlog](https://docs.google.com/spreadsheets/d/1froPASSCHChP8bctYNTxjJfjIjAtwvmkpMPh1d5ASao/edit?usp=sharing)
-- [ ] Sprint #1 / Backlog Burndown #1
+- [x] [Sprint #1 / Backlog Burndown #1](https://docs.google.com/spreadsheets/d/1sndSPV_H6UHAk_Pwc_7X58iGypfG_1NRkCKKNrqRV7w/edit?usp=sharing)
 - [ ] Sprint #2 / Backlog Burndown #2
 - [ ] Sprint #3 / Backlog Burndown #3
 - [ ] Sprint #4 / Backlog Burndown #4
@@ -130,8 +130,8 @@ Most of the NPM/YARN packages have their own documentations. You can view their 
   - [x] Pug
   - [ ] SCSS
 - [ ] Pages
-  - [ ] Landing Page (Home)
-  - [ ] Login
+  - [x] Landing Page (Home)
+  - [x] Login
   - [ ] Reset Password
   - [ ] Join
   - [ ] Dashboard
