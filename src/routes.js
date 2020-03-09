@@ -1,36 +1,55 @@
-// Global
-const HOME = "/";
-const JOIN = "/join";
-const LOGIN = "/login";
-const RESET_PASSWORD = "/reset-password";
-const SETTINGS = "/settings";
+const ROOT = "/";
 
-// Dashboardz
+// Global Routes
+const LANDING_PAGE = "/";
+const LOGIN = "/login";
+const JOIN = "/join";
+const RESET_PASSWORD = "/reset-password";
+
+// Social Login
+const GOOGLE_LOGIN = "/auth/google";
+const GOOGLE_CB = "/auth/google/callback";
+
+// Settings Routes
+const SETTINGS = "/settings";
+const UPDATE_PROFILE = "/update-profile";
+
+// Dashboard
 const DASHBOARD = "/dashboard";
-const DASHBOARD_FILTER = "/filter";
-const DASHBOARD_HOME = "/:id";
-const IMAGE_DETAIL = "/:id/image/:id";
+const DASHBOARD_ROOT = "/";
+const FILTER = "/filter"; // "/dashboard/filter"
+
+// Images
+const IMAGE = "/image";
+const IMAGE_DETAIL = "/:id"; // "/image/:id"
+const IMAGE_EDIT = "/:id/edit"; // "/image/:id/edit"
 
 const routes = {
-  home: HOME,
-  join: JOIN,
+  root: ROOT,
+  landingPage: LANDING_PAGE,
   login: LOGIN,
+  join: JOIN,
   resetPassword: RESET_PASSWORD,
+  googleLogin: GOOGLE_LOGIN,
+  googleCallback: GOOGLE_CB,
   settings: SETTINGS,
+  updateProfile: UPDATE_PROFILE,
   dashboard: DASHBOARD,
-  dashboardFilter: DASHBOARD_FILTER,
-  dashboardHome: id => {
-    if (id) {
-      return `/dashboard/${id}`;
-    } else {
-      return DASHBOARD_HOME;
-    }
-  },
+  dashboardRoot: DASHBOARD_ROOT,
+  filter: FILTER,
+  image: IMAGE,
   imageDetail: id => {
     if (id) {
-      return `/images/${id}`;
+      return `/image/${id}`;
     } else {
       return IMAGE_DETAIL;
+    }
+  },
+  imageEdit: id => {
+    if (id) {
+      return `/image/${id}/edit`;
+    } else {
+      return IMAGE_EDIT;
     }
   }
 };

@@ -3,8 +3,15 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+        link(rel="shortcut icon", href="/static/favicon.ico?", type="image/x-icon")
         link(rel="stylesheet", href="/static/style.css")
-        title #{siteName} | #{pageTitle}
+        script(src="https://kit.fontawesome.com/3b255314a2.js", crossorigin="anonymous")
+        
+        if (pageTitle)
+            title #{pageTitle} | #{siteName}
+        else
+            title #{siteName}
     body
         block content
         script(src="/static/main.js")

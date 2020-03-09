@@ -59,22 +59,6 @@ This process will start a development server in localhost
    yarn run dev:server
    ```
 
-## Build Command Guide
-
-This process will build deployable code to common JavaScript using Gulp
-
-1. Install Dependencies
-
-   ```shell
-   yarn install
-   ```
-
-2. Build project
-
-   ```shell
-   yarn run build
-   ```
-
 ## Dependencies Reference and Guides
 
 The following are useful links and dependency documentations.

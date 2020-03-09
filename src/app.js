@@ -5,6 +5,7 @@ import { join } from "path";
 import routes from "./routes";
 import globalRouter from "./router/globalRouter";
 import dashboardRouter from "./router/dashboardRouter";
+import imageRouter from "./router/imageRouter";
 import { localsMiddleware } from "./middleware";
 
 const app = express();
@@ -19,10 +20,11 @@ app.use(logger("dev"));
 app.use(localsMiddleware);
 
 // Use Static directory
-app.use("/static", express.static("static"));
+app.use("/static", express.static(join(__dirname, "static")));
 
 // Routers
-app.use(routes.home, globalRouter);
+app.use(routes.root, globalRouter);
 app.use(routes.dashboard, dashboardRouter);
+app.use(routes.image, imageRouter);
 
 export default app;

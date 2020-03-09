@@ -1,0 +1,16 @@
+extends layouts/main
+
+block content
+    header.index__header
+        //- img(src="/static/design/logo.png", alt="logo")
+    main.index__container
+        h1.index__heading Welcome
+        button.index__button__google.index__buttons
+            i.fab.fa-google
+            |     Login with Google
+        button.index__button__email.index__buttons
+            | Login with Email
+        button.index__button__join.index__buttons
+            | Create Account
+        a.index__button__forgot(href='#')
+            | Forgot your password?

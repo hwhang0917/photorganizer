@@ -1,20 +1,39 @@
 import express from "express";
 import routes from "../routes";
 import {
-  getHome,
-  getJoin,
+  getLandingPage,
   getLogin,
+  postLogin,
+  getJoin,
+  postJoin,
+  getSettings,
+  getUpdateProfile,
+  postUpdateProfile,
   getResetPassword,
-  getSettings
+  postResetPassword
 } from "../controller/globalController";
 
 // This is an express router
 const globalRouter = express.Router();
 
-globalRouter.get(routes.home, getHome);
-globalRouter.get(routes.join, getJoin);
+// Static Pages
+globalRouter.get(routes.landingPage, getLandingPage);
+
+// Login
 globalRouter.get(routes.login, getLogin);
+globalRouter.post(routes.login, postLogin);
+
+// Reset Password
 globalRouter.get(routes.resetPassword, getResetPassword);
+globalRouter.post(routes.resetPassword, postResetPassword);
+
+// Join
+globalRouter.get(routes.join, getJoin);
+globalRouter.post(routes.join, postJoin);
+
+// Settings
 globalRouter.get(routes.settings, getSettings);
+globalRouter.get(routes.updateProfile, getUpdateProfile);
+globalRouter.post(routes.updateProfile, postUpdateProfile);
 
 export default globalRouter;

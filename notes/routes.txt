@@ -1,0 +1,17 @@
+✅ Landing Page "/"
+✅ Login "/login"
+✅ Join "/Join"
+✅ ResetPassword "/reset-password"
+
+✅ Settings "/settings"
+✅ Update Profile "/update-profile"
+
+✅ Dashboard "/dashboard"
+✅ Filter "/dashboard/filter"
+
+✅ Image Detail "/image/:id"
+✅ Image Edit "/image/:id/edit"
+
+// Social Login
+Google Login "/auth/google"
+Google Callback "/auth/google/callback"
