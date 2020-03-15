@@ -1,6 +1,8 @@
 import express from "express";
 import helmet from "helmet";
 import logger from "morgan";
+import cookieParser from "cookie-parser";
+import bodyParser from "body-parser";
 import { join } from "path";
 import routes from "./routes";
 import globalRouter from "./router/globalRouter";
@@ -18,6 +20,9 @@ app.set("views", join(__dirname, "views"));
 app.use(helmet());
 app.use(logger("dev"));
 app.use(localsMiddleware);
+app.use(cookieParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Use Static directory
 app.use("/static", express.static(join(__dirname, "static")));
