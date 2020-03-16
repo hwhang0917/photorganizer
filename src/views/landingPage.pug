@@ -1,16 +1,38 @@
 extends layouts/main
 
 block content
-    header.index__header
-        //- img(src="/static/design/logo.png", alt="logo")
-    main.index__container
-        h1.index__heading Welcome
-        button.index__button__google.index__buttons
-            i.fab.fa-google
-            |     Login with Google
-        button.index__button__email.index__buttons
-            | Login with Email
-        button.index__button__join.index__buttons
-            | Create Account
-        a.index__button__forgot(href='#')
-            | Forgot your password?
+    header.header
+        .header__column
+            img(src="/static/design/logo.png", alt="Photorganizer Logo").header__logo
+        .header__column
+            h1.header__title Photorganizer
+        .header__column
+            a(href="#").header__link Desktop App
+    main.main
+        ul.main__buttons
+            li.button
+                a.button__link(href="#")
+                    i.fab.fa-google
+                    | Login With Google
+            li.button
+                a.button__link(href="#")
+                    i.far.fa-envelope
+                    | Login With Email
+            li.button
+                a.button__link(href="#")
+                    | Create Account
+    footer.footer
+        .footer__column
+            p.footer__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, doloremque vero consectetur nesciunt enim corporis esse error explicabo nihil asperiores, accusantium deleniti iusto veniam sint beatae? Beatae repellendus pariatur ab.
+        .footer__column
+            .footer__logo
+                img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
+                span.copyright Photorganizer &copy;
+        .footer__column
+            ul.footer__contributors
+                li.contributor
+                    a.contributor__link(href="#") Heesang Whang
+                li.contributor
+                    a.contributor__link(href="#") Subin Kim
+                li.contributor
+                    a.contributor__link(href="#") Akhigbe Unuigbe

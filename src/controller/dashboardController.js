@@ -6,5 +6,5 @@ export const getFilter = (req, res) => {
   const {
     query: { term }
   } = req;
-  res.render("filter", { pageTitle: `${term}`, term });
+  res.render("filter", { pageTitle: `Filtering by ${term}`, term });
 };

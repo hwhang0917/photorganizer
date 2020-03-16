@@ -13,5 +13,9 @@ html(lang="en")
         else
             title #{siteName}
     body
+        if (!hideDefaultPartial)
+            include ../partials/header
         block content
+        if (!hideDefaultPartial)
+            include ../partials/footer
         script(src="/static/main.js")
