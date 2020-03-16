@@ -16,8 +16,16 @@ body {
   background: linear-gradient(white 0%, transparent 90%);
 
   .header__column {
+    display: flex;
+    align-items: center;
     text-align: center;
     padding: 10px;
+    .header__buttons {
+      font-size: 24px;
+      &:hover {
+        color: #2c3e50;
+      }
+    }
     .header__logo-title-link {
       display: flex;
       user-select: none;
@@ -54,7 +62,7 @@ body {
 }
 
 .main {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   margin: auto;
   width: 50vw;
@@ -73,8 +81,15 @@ body {
     border-radius: 15px;
     width: 200px;
     transition-duration: 0.2s;
+    box-shadow: $boxshadow;
     &:hover {
       background-color: #2980b9;
+    }
+  }
+  .main__button:last-child {
+    background-color: #2ecc71;
+    &:hover {
+      background-color: #27ae60;
     }
   }
 }
@@ -83,11 +98,11 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   user-select: none;
+  background: linear-gradient(transparent 0%, white 98%);
   .footer__column {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     .footer__description {
       text-align: center;
     }

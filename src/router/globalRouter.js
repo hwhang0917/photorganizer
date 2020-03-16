@@ -4,6 +4,7 @@ import {
   getLandingPage,
   getLogin,
   postLogin,
+  getLogout,
   getJoin,
   postJoin,
   getSettings,
@@ -22,6 +23,7 @@ globalRouter.get(routes.landingPage, getLandingPage);
 // Login
 globalRouter.get(routes.login, getLogin);
 globalRouter.post(routes.login, postLogin);
+globalRouter.get(routes.logout, getLogout);
 
 // Reset Password
 globalRouter.get(routes.resetPassword, getResetPassword);

@@ -4,6 +4,7 @@ const ROOT = "/";
 const LANDING_PAGE = "/";
 const LOGIN = "/login";
 const JOIN = "/join";
+const LOGOUT = "/logout";
 const RESET_PASSWORD = "/reset-password";
 
 // Social Login
@@ -29,6 +30,7 @@ const routes = {
   landingPage: LANDING_PAGE,
   login: LOGIN,
   join: JOIN,
+  logout: LOGOUT,
   resetPassword: RESET_PASSWORD,
   googleLogin: GOOGLE_LOGIN,
   googleCallback: GOOGLE_CB,

@@ -1,4 +1,10 @@
 extends layouts/main
+include mixins/thumbnail
 
 block content
-    h1 Dashboard
+    .dashboard
+        each image in images
+            +thumbnail({
+                id: image.id,
+                src: image.fileURL
+            })

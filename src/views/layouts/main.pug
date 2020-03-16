@@ -16,5 +16,6 @@ html(lang="en")
         img(src="/static/design/landingBg.jpg", alt="Wallpaper of polaroid photos").wallpaper
         include ../partials/header
         block content
-        include ../partials/footer
+        if(!loggedIn)
+            include ../partials/footer
         script(src="/static/js/main.js")

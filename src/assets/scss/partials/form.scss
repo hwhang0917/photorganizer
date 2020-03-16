@@ -1,0 +1,51 @@
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .form__title {
+    color: white;
+    font-size: 48px;
+    font-family: "Permanent Marker", cursive;
+    text-shadow: 2px 2px #2c3e50;
+    user-select: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      padding: 15px 50px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: $boxshadow;
+    }
+    input:last-child {
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      &:hover {
+        background-color: #2980b9;
+      }
+    }
+  }
+}
+
+.search-container {
+  form {
+    .search__icon {
+      margin-right: 15px;
+    }
+    input {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: $boxshadow;
+      border-radius: 15px;
+      padding: 10px 50px;
+      border: 2px solid transparent;
+      transition-duration: 0.5s;
+      &:focus {
+        border: 2px solid #2ecc71;
+      }
+    }
+  }
+}

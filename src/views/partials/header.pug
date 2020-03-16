@@ -1,6 +1,6 @@
 header.header
     .header__column
-        if(landingPage)
+        if(!loggedIn)
             a(href="/").header__logo-title-link
                 img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
                 h1.header__title Photorganizer
@@ -9,9 +9,15 @@ header.header
                 img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
                 h1.header__title Photorganizer
     .header__column
-        if(landingPage)
+        if(!loggedIn)
             a(href="https://github.com/hwhang0917/photorganizer").header__link About
             a(href="#").header__link Desktop App
         else
-            form(action=`/dashboard${routes.filter}`, method="get")
-                input(type="text", placeholder="Filter image by", name="term")
+            .search-container
+                form(action=`/dashboard${routes.filter}`, method="get")
+                    i.fas.fa-search.search__icon
+                    input(type="text", placeholder="Filter image by location", name="term")
+            a(href="/settings").header__buttons
+                i.fas.fa-cog
+            a(href="/logout").header__buttons
+                i.fas.fa-sign-out-alt
