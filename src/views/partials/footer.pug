@@ -1,5 +1,15 @@
 footer.footer
-    .footer__icon
-        a(href="https://github.com/hwhang0917/wetube-clone")
-            i.fab.fa-github
-    span.footer__text #{siteName} #{new Date().getFullYear()} &copy;
+    .footer__column
+        p.footer__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, doloremque vero consectetur nesciunt enim corporis esse error explicabo nihil asperiores, accusantium deleniti iusto veniam sint beatae? Beatae repellendus pariatur ab.
+    .footer__column
+        .footer__logo
+            img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
+            span.copyright Photorganizer &copy;
+    .footer__column
+        ul.footer__contributors
+            li.contributor
+                a.contributor__link(href="http://github.com/hwhang0917") Heesang Whang
+            li.contributor
+                a.contributor__link(href="http://github.com/miknibus") Subin Kim
+            li.contributor
+                a.contributor__link(href="http://github.com/aibe96") Akhigbe Unuigbe

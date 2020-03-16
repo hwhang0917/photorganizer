@@ -1,3 +1,7 @@
-body {
-  font-family: sans-serif;
-}
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import "config/variables";
+@import "config/reset.scss";
+@import "main.scss";
+
+@import "pages/landingPage.scss";
+@import "pages/landingBg.scss";

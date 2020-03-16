@@ -1,5 +1,5 @@
 export const getLandingPage = (req, res) => {
-  res.render("landingPage", { hideDefaultPartial: true });
+  res.render("landingPage", { landingPage: true });
 };
 
 export const getLogin = (req, res) => {

@@ -13,9 +13,8 @@ html(lang="en")
         else
             title #{siteName}
     body
-        if (!hideDefaultPartial)
-            include ../partials/header
+        img(src="/static/design/landingBg.jpg", alt="Wallpaper of polaroid photos").wallpaper
+        include ../partials/header
         block content
-        if (!hideDefaultPartial)
-            include ../partials/footer
+        include ../partials/footer
         script(src="/static/js/main.js")

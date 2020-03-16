@@ -1,22 +1,17 @@
 header.header
-    .header__wrapper
-        .header__column
-            a(href=routes.home)
-                i.fab.fa-youtube
-        .header__column
-            form(action=routes.search, method="get")
-                input(type="text", placeholder="검색...", name="term")
-        .header__column
-            ul
-                if !loggedUser
-                    li
-                        a(href=routes.join) 가입
-                    li
-                        a(href=routes.login) 로그인
-                else 
-                    li
-                        a(href=`/videos${routes.upload}`) 업로드
-                    li
-                        a(href=routes.me) 프로필
-                    li
-                        a(href=routes.logout) 로그아웃
+    .header__column
+        if(landingPage)
+            a(href="/").header__logo-title-link
+                img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
+                h1.header__title Photorganizer
+        else
+            a(href="/dashboard").header__logo-title-link
+                img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
+                h1.header__title Photorganizer
+    .header__column
+        if(landingPage)
+            a(href="https://github.com/hwhang0917/photorganizer").header__link About
+            a(href="#").header__link Desktop App
+        else
+            form(action=`/dashboard${routes.filter}`, method="get")
+                input(type="text", placeholder="Filter image by", name="term")
