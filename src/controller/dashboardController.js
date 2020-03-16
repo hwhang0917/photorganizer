@@ -1,3 +1,4 @@
+import routes from "../routes";
 import { getImagesByUser } from "../db";
 
 export const getDashboard = async (req, res) => {
@@ -15,4 +16,13 @@ export const getFilter = (req, res) => {
     term,
     loggedIn: true
   });
+};
+
+export const getImageUpload = (req, res) => {
+  res.render("upload", { pageTitle: "Upload", loggedIn: true });
+};
+
+export const postImageUpload = (req, res) => {
+  console.log(req.body);
+  res.redirect(routes.dashboard);
 };

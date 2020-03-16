@@ -8,6 +8,7 @@
 
 ✅ Dashboard "/dashboard"
 ✅ Filter "/dashboard/filter"
+✅ Image Upload "/dashboard/upload"
 
 ✅ Image Detail "/image/:id"
 ✅ Image Edit "/image/:id/edit"

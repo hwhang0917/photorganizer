@@ -22,6 +22,7 @@ const FILTER = "/filter"; // "/dashboard/filter"
 
 // Images
 const IMAGE = "/image";
+const IMAGE_UPLOAD = "/upload"; // "image/upload"
 const IMAGE_DETAIL = "/:id"; // "/image/:id"
 const IMAGE_EDIT = "/:id/edit"; // "/image/:id/edit"
 
@@ -40,6 +41,7 @@ const routes = {
   dashboardRoot: DASHBOARD_ROOT,
   filter: FILTER,
   image: IMAGE,
+  imageUpload: IMAGE_UPLOAD,
   imageDetail: id => {
     if (id) {
       return `/image/${id}`;

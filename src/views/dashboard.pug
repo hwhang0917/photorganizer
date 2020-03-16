@@ -3,8 +3,15 @@ include mixins/thumbnail
 
 block content
     .dashboard
-        each image in images
-            +thumbnail({
-                id: image.id,
-                src: image.fileURL
-            })
+        .grid-container
+            each image in images
+                +thumbnail({
+                    id: image.id,
+                    src: image.fileURL
+                })
+        .dashboard__controller
+            input(type="button", value="Some Controll")
+            input(type="button", value="Some Controll")
+            input(type="button", value="Some Controll")
+            input(type="button", value="Some Controll")
+        

@@ -1,4 +1,9 @@
 import routes from "./routes";
+import multer from "multer";
+
+// Multer
+const multerImage = multer({ dest: "upload" });
+export const uploadImage = multerImage.single("imageFile");
 
 // This middleware sends local data to view
 export const localsMiddleware = (req, res, next) => {
