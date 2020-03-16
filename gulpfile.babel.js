@@ -63,7 +63,7 @@ const js = () => {
 
 const watchFiles = () => {
   gulp.watch(paths.styles.watch, styles);
-  // gulp.watch(paths.js.watch, js);
+  gulp.watch(paths.js.watch, js);
 };
 
 // const dev = gulp.series([clean, styles, watchFiles]);
