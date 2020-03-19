@@ -24,5 +24,5 @@ export const getImageUpload = (req, res) => {
 
 export const postImageUpload = (req, res) => {
   console.log(req.body);
-  res.redirect(routes.dashboard);
+  let metaName = "";
 };

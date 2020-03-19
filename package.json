@@ -4,7 +4,7 @@
   "description": "This is an image organizing web based application.",
   "main": "index.js",
   "scripts": {
-    "dev:server": "nodemon --exec babel-node src/server.js --delay 2",
+    "dev:server": "nodemon --exec babel-node src/server.js --delay 2 --ignore 'assets' --ignore 'static'",
     "dev:assets": "gulp",
     "build:assets": "gulp build",
     "build:server": "babel src --out-dir build --ignore 'src/static'",
@@ -58,6 +58,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "@uppy/aws-s3": "^1.5.2",
     "@uppy/core": "^1.8.2",
     "@uppy/dashboard": "^1.6.2",
     "@uppy/google-drive": "^1.4.2",

@@ -3,9 +3,8 @@ extends layouts/main
 block content
     .form-container
         h1.form__title Upload Image
-        
-        form(action=`/dashboard${routes.imageUpload}`, method="post", enctype="multipart/form-data")
-            input(type="button", value="Upload Image")#UppyModalOpenerBtn 
-            .DashboardContainer
-            input(type="text", name="location", placeholder="Location", required=false)
-            input(type="submit", value="Upload")
+        .DashboardContainer
+
+        //- form(action=`/dashboard${routes.imageUpload}`, method="post", enctype="multipart/form-data")
+        //-     input(type="text", name="location", placeholder="Location", required=false)
+        //-     input(type="submit", value="Upload")
