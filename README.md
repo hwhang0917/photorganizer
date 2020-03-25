@@ -97,7 +97,7 @@ Most of the NPM/YARN packages have their own documentations. You can view their 
 - [x] [Wireframe](https://www.figma.com/file/QkBPxaX2kneznzkUjByjNu/Photorganizer?node-id=0%3A1)
 - [x] [Scrum Product Backlog](https://docs.google.com/spreadsheets/d/1froPASSCHChP8bctYNTxjJfjIjAtwvmkpMPh1d5ASao/edit?usp=sharing)
 - [x] [Sprint #1 / Backlog Burndown #1](https://docs.google.com/spreadsheets/d/1sndSPV_H6UHAk_Pwc_7X58iGypfG_1NRkCKKNrqRV7w/edit?usp=sharing)
-- [ ] Sprint #2 / Backlog Burndown #2
+- [x] [Sprint #2 / Backlog Burndown #2](https://docs.google.com/spreadsheets/d/1PhLnvROlthtlWfeYRmLx0SoqmGK-WkQ71sYFCjzevWk/edit?usp=sharing)
 - [ ] Sprint #3 / Backlog Burndown #3
 - [ ] Sprint #4 / Backlog Burndown #4
 - [ ] Testing
