@@ -3,7 +3,7 @@
 - Quick Note
   - Use the following command to clone git repository to your local computer
   ```shell
-  git clone https://github.com/hwhang0917/photorganizer.git
+  git clone https://github.com/miknibus/photorganizer.git
   ```
   - [Install Yarn](https://yarnpkg.com/getting-started/install)
 
