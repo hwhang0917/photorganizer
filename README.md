@@ -13,6 +13,10 @@
 - Subin Kim
 - Akhigbe Unuigbe
 
+## Discord
+
+- [Discord Server](https://discord.gg/NGnrUf8)
+
 ## Project Description
 
 This is an image organizing web based application. This is a group project for the course Software Engineering (CSCI450) instructed by professor Grace Lew.
