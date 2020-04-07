@@ -16,6 +16,7 @@ export const localsMiddleware = (req, res, next) => {
 // Middleware to prevent non-logged-in users from accessing certain page
 export const onlyPublic = (req, res, next) => {
   if (req.user) {
+    console.log(req.user);
     res.redirect(routes.landingPage);
   } else {
     next();
