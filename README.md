@@ -21,6 +21,8 @@ This is an image organizing web based application. This is a group project for t
 
   We will use [Yarn Package Manager](https://yarnpkg.com/) for all dependency management.
 
+  - ##### [Discord Server](https://discord.gg/NGnrUf8)
+
 - #### Backend Side Guide
 
   Our project uses is written with JavaScript. Thus the project uses [Node.JS](https://nodejs.org/), which is a tool helps run JavaScript outside of the browser and run within the system. Node JS has a server framework called [ExpressJS](https://expressjs.com/) that can be used to build quick servers.
