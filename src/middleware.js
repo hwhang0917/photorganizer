@@ -9,6 +9,7 @@ export const uploadImage = multerImage.single("imageFile");
 export const localsMiddleware = (req, res, next) => {
   res.locals.siteName = "Phtorganizer";
   res.locals.routes = routes;
+  res.locals.loggedUser = req.user || null;
   next();
 };
 
