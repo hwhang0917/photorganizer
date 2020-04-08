@@ -9,12 +9,14 @@ export const uploadImage = multerImage.single("imageFile");
 export const localsMiddleware = (req, res, next) => {
   res.locals.siteName = "Phtorganizer";
   res.locals.routes = routes;
+  res.locals.loggedUser = req.user || null;
   next();
 };
 
 // Middleware to prevent non-logged-in users from accessing certain page
 export const onlyPublic = (req, res, next) => {
   if (req.user) {
+    console.log(req.user);
     res.redirect(routes.landingPage);
   } else {
     next();

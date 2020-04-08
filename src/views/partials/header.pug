@@ -1,6 +1,6 @@
 header.header
     .header__column
-        if(!loggedIn)
+        if(!loggedUser)
             a(href=routes.landingPage).header__logo-title-link
                 img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
                 h1.header__title Photorganizer
@@ -9,7 +9,7 @@ header.header
                 img(src="/static/design/logo.png", alt="Photorganizer Logo").logo
                 h1.header__title Photorganizer
     .header__column
-        if(!loggedIn)
+        if(!loggedUser)
             a(href="https://github.com/hwhang0917/photorganizer").header__link About
             a(href="#").header__link Desktop App
         else
