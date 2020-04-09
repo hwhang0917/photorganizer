@@ -1,5 +1,6 @@
 import express from "express";
 import routes from "../routes";
+import passport from "passport";
 import {
   getLandingPage,
   getLogin,
@@ -12,6 +13,8 @@ import {
   postEditProfile,
   getChangePassword,
   postChangePassword,
+  getGoogleLogin,
+  postGoogleLogin,
 } from "../controller/globalController";
 import { onlyPublic, onlyPrivate } from "../middleware";
 
@@ -25,6 +28,14 @@ globalRouter.get(routes.landingPage, getLandingPage);
 globalRouter.get(routes.login, onlyPublic, getLogin);
 globalRouter.post(routes.login, onlyPublic, postLogin);
 globalRouter.get(routes.logout, getLogout);
+
+// Social Login
+globalRouter.get(routes.googleLogin, getGoogleLogin);
+globalRouter.get(
+  routes.googleCallback,
+  passport.authenticate("google", { failureRedirect: "/login" }),
+  postGoogleLogin
+);
 
 // Reset Password
 globalRouter.get(routes.changePassword, onlyPrivate, getChangePassword);

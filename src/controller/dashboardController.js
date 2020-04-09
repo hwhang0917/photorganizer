@@ -2,8 +2,9 @@ import routes from "../routes";
 import { getImagesByUser } from "../db";
 
 export const getDashboard = async (req, res) => {
+  //console.log(req.user);
   const images = await getImagesByUser(2);
-  console.log(images);
+  //console.log(images);
   res.render("dashboard", { pageTitle: "Dashboard", loggedUser: true, images });
 };
 

@@ -68,6 +68,44 @@ export const postChangePassword = async (req, res) => {
   }
 };
 
+export const getGoogleLogin = passport.authenticate("google", {
+  scope: ["profile"],
+});
+
+export const googleLoginCallback = async (_, __, profile, cb) => {
+  console.log(profile);
+  const {
+    _json: { sub, picture, name },
+  } = profile;
+  // TODO: temporary fake email with regex to remove space between given_name and family_name
+  // very critical bug since if the google authentication returns people with identical names,
+  // the googleID gets overwritten and the pre-existing user gets deleted from the database
+  // const email = `${name.replace(/\s/g, "")}@gmail.com`;
+  const email = `${sub}@gmail.com`;
+  // decided to create fake email with googleID
+  try {
+    const user = await User.findOne({ email });
+    if (user) {
+      user.googleID = sub;
+      user.save();
+      return cb(null, user);
+    }
+    const newUser = await User.create({
+      name,
+      email,
+      avatarUrl: picture,
+      googleID: sub,
+    });
+    return cb(null, newUser);
+  } catch (error) {
+    return cb(error);
+  }
+};
+
+export const postGoogleLogin = (req, res) => {
+  res.redirect(routes.dashboard);
+};
+
 export const getSettings = (req, res) => {
   res.render("settings", { pageTitle: "Settings", loggedUser: true });
 };
