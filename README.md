@@ -104,13 +104,13 @@ Most of the NPM/YARN packages have their own documentations. You can view their 
 - [x] [Scrum Product Backlog](https://docs.google.com/spreadsheets/d/1froPASSCHChP8bctYNTxjJfjIjAtwvmkpMPh1d5ASao/edit?usp=sharing)
 - [x] [Sprint #1 / Backlog Burndown #1](https://docs.google.com/spreadsheets/d/1sndSPV_H6UHAk_Pwc_7X58iGypfG_1NRkCKKNrqRV7w/edit?usp=sharing)
 - [x] [Sprint #2 / Backlog Burndown #2](https://docs.google.com/spreadsheets/d/1PhLnvROlthtlWfeYRmLx0SoqmGK-WkQ71sYFCjzevWk/edit?usp=sharing)
-- [ ] Sprint #3 / Backlog Burndown #3
-- [ ] Sprint #4 / Backlog Burndown #4
+- [x] Sprint #3 / Backlog Burndown #3
+- [x] Sprint #4 / Backlog Burndown #4
 - [ ] Testing
 - [ ] Deployment
-- [ ] Final Presentation Prepare
+- [x] [Final Presentation Prepare](https://docs.google.com/presentation/d/1ULi6x6Fy8bBQFVw0r_fLAJQQFIsOt5wnAgiFGEsJI6c/edit?usp=sharing)
 
-#### Sprint #1 Tasks
+## Tasks
 
 - [x] Project Setting (Dev Ops)
   - [x] SCSS / Babel Build flow
@@ -122,8 +122,8 @@ Most of the NPM/YARN packages have their own documentations. You can view their 
 - [x] Pages
   - [x] Landing Page (Home)
   - [x] Login
-  - [ ] Reset Password
+  - [x] Reset Password
   - [x] Join
-  - [ ] Dashboard
-  - [ ] Image Detail
+  - [x] Dashboard
+  - [x] Image Detail
   - [ ] Settings
