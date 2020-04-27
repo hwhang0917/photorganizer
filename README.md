@@ -3,7 +3,7 @@
 - Quick Note
   - Use the following command to clone git repository to your local computer
   ```shell
-  git clone https://github.com/miknibus/photorganizer.git
+  git clone https://github.com/hwhang0917/photorganizer.git
   ```
   - [Install Yarn](https://yarnpkg.com/getting-started/install)
 
@@ -12,10 +12,6 @@
 - Heesang Mark Whang
 - Subin Kim
 - Akhigbe Unuigbe
-
-## Discord
-
-- [Discord Server](https://discord.gg/NGnrUf8)
 
 ## Project Description
 
