@@ -43,7 +43,12 @@ This process will start a development server in localhost
    yarn install
    ```
 
-2. Run Develop Assets
+2. [Download .env](https://drive.google.com/file/d/1NvUr8VM7v3y1w6RYj0E0aS2AAt8g1IW2/view?usp=sharing) file to the project directory
+
+   - Note: this still might not work, you need a whitelisted IP address to access MongoDB cloud server
+   - Email the project manager for whitelist
+
+3. Run Develop Assets
 
    This process will watch client side assets (JS, SCSS, PUG, etc)
 
@@ -51,7 +56,7 @@ This process will start a development server in localhost
    yarn run dev:assets
    ```
 
-3. Run Develop Server
+4. Run Develop Server
 
    This process will watch server side code (express server, etc)
 
