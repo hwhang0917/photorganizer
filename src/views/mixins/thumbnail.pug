@@ -1,4 +1,4 @@
 mixin thumbnail(image = {})
     .thumbnail-box
         a(href=routes.imageDetail(image.id))
-            img(src=image.src)
+            img(src=`/${image.src}`)

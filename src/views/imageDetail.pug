@@ -1,4 +1,7 @@
 extends layouts/main
 
 block content
-    h1 Image Detail
+    .image__container
+        img.image(src=`/${image.fileUrl}`)
+        h1.image__place Photo taken from "#{image.location}"
+        h3.image_uploadtime Uploaded: #{image.uploadedAt}

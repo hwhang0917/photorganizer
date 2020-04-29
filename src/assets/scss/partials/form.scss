@@ -1,19 +1,48 @@
 .form-container {
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
   .form__title {
     color: white;
     font-size: 48px;
     font-family: "Permanent Marker", cursive;
     text-shadow: 2px 2px #2c3e50;
     user-select: none;
+    margin-bottom: 50px;
   }
   form {
     display: flex;
     flex-direction: column;
+    .fileUpload {
+      label {
+        font-weight: 300;
+        margin-right: 10px;
+      }
+      margin-bottom: 20px;
+    }
+    .input__text {
+      width: 300px;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid transparent;
+
+      &:focus {
+        border-left: 2px solid gray;
+      }
+      &:required,
+      &:invalid {
+        border-left: 2px solid #e74c3c;
+      }
+      &:valid {
+        border-left: 2px solid #27ae60;
+      }
+    }
     input[type="submit"] {
       padding: 15px 50px;
       margin: 10px;

@@ -13,7 +13,8 @@ body {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   padding-bottom: 70px;
-  background: linear-gradient(white 0%, transparent 90%);
+  background: linear-gradient(black 0%, transparent 90%);
+  color: white;
 
   .header__column {
     display: flex;
@@ -81,7 +82,7 @@ body {
 }
 
 .main {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   margin: auto;
   width: 50vw;
@@ -117,11 +118,12 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   user-select: none;
-  background: linear-gradient(transparent 0%, white 98%);
+  background: linear-gradient(transparent 0%, black 98%);
   .footer__column {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     .footer__description {
       text-align: center;
     }

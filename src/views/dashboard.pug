@@ -3,15 +3,17 @@ include mixins/thumbnail
 
 block content
     .dashboard
+        if (term)
+            h3.dashboard__title Searching photos from "#{term}"
         .grid-container
+            if images.length == 0
+                
+                div.dashboard__no-img 
+                    i.fas.fa-exclamation-triangle
+                    span No Photos Found
             each image in images
                 +thumbnail({
                     id: image.id,
-                    src: image.fileURL
+                    src: image.fileUrl
                 })
-        .dashboard__controller
-            input(type="button", value="Some Controll")
-            input(type="button", value="Some Controll")
-            input(type="button", value="Some Controll")
-            input(type="button", value="Some Controll")
         

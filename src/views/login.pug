@@ -4,6 +4,6 @@ block content
     .form-container
         h1.form__title Login
         form(action=routes.login, method="post")
-            input(type="email", name="email", placeholder="E-mail", required)
-            input(type="password", name="password", placeholder="Password", required)
+            input.input__text(type="email", name="email", placeholder="E-mail", required)
+            input.input__text(type="password", name="password", placeholder="Password", required)
             input(type="submit", value="Login")

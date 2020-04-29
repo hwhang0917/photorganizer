@@ -4,9 +4,14 @@ import {
   getDashboard,
   getFilter,
   getImageUpload,
-  postImageUpload
+  postImageUpload,
 } from "../controller/dashboardController";
-// import { uploadImage } from "../middleware";
+import {
+  uploadImage,
+  localUpload,
+  onlyPublic,
+  onlyPrivate,
+} from "../middleware";
 
 // This is an express router
 const dashboardRouter = express.Router();
@@ -14,6 +19,6 @@ const dashboardRouter = express.Router();
 dashboardRouter.get(routes.dashboardRoot, getDashboard);
 dashboardRouter.get(routes.filter, getFilter);
 dashboardRouter.get(routes.imageUpload, getImageUpload);
-dashboardRouter.post(routes.imageUpload, postImageUpload);
+dashboardRouter.post(routes.imageUpload, localUpload, postImageUpload);
 
 export default dashboardRouter;
